@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şifre Değiştir - Instagram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Instagram</h1>
+            <h2>Şifreni Değiştir</h2>
+            <form id="passwordForm">
+                <div class="input-group">
+                    <label>Mevcut Şifre</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="currentPassword" placeholder="Mevcut şifreni gir" required>
+                        <span class="toggle" onclick="togglePassword('currentPassword', this)">👁️</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Yeni Şifre</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="newPassword" placeholder="Yeni şifreni gir" required>
+                        <span class="toggle" onclick="togglePassword('newPassword', this)">👁️</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Yeni Şifre (Tekrar)</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirmPassword" placeholder="Yeni şifreni tekrar gir" required>
+                        <span class="toggle" onclick="togglePassword('confirmPassword', this)">👁️</span>
+                    </div>
+                </div>
+                <button type="submit">Şifreyi Değiştir</button>
+                <p id="message"></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
